@@ -1,25 +1,46 @@
 {
   "expo": {
-    "name": "billing-app",
-    "slug": "billing-app",
-    "version": "1.0.0",
-    "orientation": "portrait",
+    "name": "CounterBook",
+    "slug": "counterbook",
+    "version": "1.0.1",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
+      "package": "com.counterbook.billing",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0E5C56",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.BLUETOOTH_ADVERTISE"
+      ],
+      "versionCode": 2
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "plugins": [
+      "expo-sqlite",
+      "expo-sharing",
+      "expo-document-picker",
+      [
+        "with-rn-bluetooth-classic",
+        {
+          "bluetoothAlwaysPermission": "Allow $(PRODUCT_NAME) to connect to your receipt printer over Bluetooth."
+        }
+      ],
+      "@react-native-vector-icons/ionicons"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f318ee4d-1131-407b-b88c-b67efe982259"
+      }
     }
   }
 }

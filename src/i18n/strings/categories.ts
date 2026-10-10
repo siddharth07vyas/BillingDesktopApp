@@ -1,0 +1,42 @@
+import { defineStrings } from '../defineStrings';
+
+export const categories = defineStrings(
+  {
+    searchPlaceholder: 'Search categories or sub-categories…',
+    addCategoryButton: '+ Add category',
+    addSubcategoryButton: '+ Add sub-category',
+    hint: 'Sub-categories are optional — add one when a product line has several varieties, like Pan Bahar sold in ₹5 / ₹10 / ₹20 pouches.',
+    noMatch: 'No categories match.',
+    productCount: '{count} products',
+    subcategoryCount: '{count} sub-categories',
+    addCategory: 'Add category',
+    renameCategory: 'Rename category',
+    addSubcategory: 'Add sub-category',
+    renameSubcategory: 'Rename sub-category',
+    cannotDelete: 'Cannot delete',
+    cannotDeleteBody: 'Move or delete its products first.',
+    deleteCategory: 'Delete category',
+    deleteSubcategory: 'Delete sub-category',
+    deleteConfirm: 'Delete "{name}"?',
+    namePlaceholder: 'e.g. Pan Bahar',
+  },
+  {
+    searchPlaceholder: 'श्रेणी या उप-श्रेणी खोजें…',
+    addCategoryButton: '+ श्रेणी जोड़ें',
+    addSubcategoryButton: '+ उप-श्रेणी जोड़ें',
+    hint: 'उप-श्रेणी ज़रूरी नहीं है — इसे तब जोड़ें जब एक ही सामान कई तरह का हो, जैसे Pan Bahar के ₹5 / ₹10 / ₹20 वाले पाउच।',
+    noMatch: 'कोई श्रेणी नहीं मिली।',
+    productCount: '{count} सामान',
+    subcategoryCount: '{count} उप-श्रेणियाँ',
+    addCategory: 'श्रेणी जोड़ें',
+    renameCategory: 'श्रेणी का नाम बदलें',
+    addSubcategory: 'उप-श्रेणी जोड़ें',
+    renameSubcategory: 'उप-श्रेणी का नाम बदलें',
+    cannotDelete: 'हटा नहीं सकते',
+    cannotDeleteBody: 'पहले इसके सामान को दूसरी जगह डालें या हटाएँ।',
+    deleteCategory: 'श्रेणी हटाएँ',
+    deleteSubcategory: 'उप-श्रेणी हटाएँ',
+    deleteConfirm: '"{name}" हटाएँ?',
+    namePlaceholder: 'जैसे Pan Bahar',
+  }
+);
